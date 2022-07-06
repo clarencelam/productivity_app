@@ -1,0 +1,67 @@
+.app {
+  height: 100vh;
+  padding: 30px;
+}
+
+body{
+  background: rgb(54,217,182) no-repeat center center fixed;
+  background: linear-gradient(90deg, rgba(54,217,182,1) 0%, rgba(32,152,126,1) 43%, rgba(0,212,255,1) 100%);
+background-image: url("https://picsum.photos/360/1000?grayscale") ;
+background-size:     cover;     
+
+}
+
+/* using the @media tag to resize background-image, to handle tablets, skinny desktop screens */
+@media screen and (min-width: 480px) {
+  body {
+    background-image: url("https://picsum.photos/768/1500?grayscale");
+    background-size:     cover;     
+      }
+}
+
+/* handle regular desktop screens */ 
+@media screen and (min-width: 800px) {
+  body {
+    background-image: url("https://picsum.photos/1920/2500?grayscale");
+    background-size:     cover;     
+
+  }
+}
+
+/* handle regular desktop screens */ 
+@media screen and (min-width: 1281px) {
+  body {
+    background-image: url("https://picsum.photos/2880/2500?grayscale");
+    background-size:     cover;     
+
+  }
+}
+
+
+.todo-list {
+  background: #e8e8e8;
+  max-width: 600px;
+  margin:0 auto;
+
+  border-radius: 4px;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  padding: 5px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.todo {
+  cursor: pointer;
+
+  align-items: center;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 3px 10px;
+}
